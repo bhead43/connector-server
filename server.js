@@ -47,5 +47,4 @@ app.get("/resources/dummyimg", async (context) => {
     });
 })
 
-export default handle(app);
-serve(app);
+export default app;
