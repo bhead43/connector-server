@@ -1,5 +1,6 @@
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
+import { handle } from 'hono/vercel';
 import * as fs from 'fs';
 import { initDB } from './database.js';
 
@@ -46,4 +47,4 @@ app.get("/resources/dummyimg", async (context) => {
     });
 })
 
-serve(app);
+export default handle(app);
