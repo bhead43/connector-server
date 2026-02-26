@@ -1,6 +1,6 @@
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
-import { handle } from 'hono/vercel';
+import { handle } from '@hono/node-server/vercel';
 import * as fs from 'fs';
 import { initDB } from './database.js';
 
